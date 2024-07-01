@@ -218,7 +218,7 @@ Import-WdsBootImage -Path "H:\sources\boot.wim"
  
 Import-WdsInstallImage -Path "H:\sources\install.wim"
 
-#Roaming profiles (RH) (A global UserAccount Over the network (no local userAccount for each account )
+#Roaming profiles (RH) (A global UserAccount Over the network (no local userAccount for each PC )
 
 New-Item -Name "Profiles" -ItemType Directory -Path "C:\" 
 $RhUsers =Get-ADUser -Filter * -SearchBase "OU=RH,DC=AuTaza2,DC=ma" 
